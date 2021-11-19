@@ -23,11 +23,22 @@ namespace LoyaltyRewards
 
             IServiceCollection services = ConfigureServices();
             var serviceProvider = services.BuildServiceProvider();
+            using var scope = serviceProvider.CreateScope();
 
             Log.Debug("Starting {ApplicationContext}");
 
-            await MigrateDatabaseAsync(serviceProvider);
+            await MigrateDatabaseAsync(scope);
 
+            await RunAsync(serviceProvider);
+
+            Log.Debug("Exiting {ApplicationContext}");
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+
+        private static async Task RunAsync(ServiceProvider serviceProvider)
+        {
             var handler = serviceProvider.GetRequiredService<AssignOfferHandler>();
             try
             {
@@ -47,17 +58,12 @@ namespace LoyaltyRewards
             {
                 Log.Error(e, "Error handling request");
             }
-
-            Log.Debug("Exiting {ApplicationContext}");
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
         }
 
-        private static async Task MigrateDatabaseAsync(ServiceProvider serviceProvider)
+        private static async Task MigrateDatabaseAsync(IServiceScope scope)
         {
-            Log.Debug("Migrating database");
-            await serviceProvider.GetRequiredService<LoyaltyRewardsDbContext>().Database.EnsureCreatedAsync();
-            Log.Debug("Migration completed");
+            var migrationHandler = scope.ServiceProvider.GetRequiredService<MigrationHandler>();
+            await migrationHandler.MigrateDatabaseAsync(scope.ServiceProvider.GetRequiredService<LoyaltyRewardsDbContext>());
         }
 
         private static IServiceCollection ConfigureServices()
@@ -70,6 +76,7 @@ namespace LoyaltyRewards
                 .AddDbContext<LoyaltyRewardsDbContext>(options =>
                     options.UseSqlServer(@"Server=.;Database=LoyalityRewards;Integrated Security=True"))
                 .AddTransient<AssignOfferHandler>()
+                .AddSingleton<MigrationHandler>()
                 .AddSingleton(new HttpClient
                 {
                     BaseAddress = new Uri("http://localhost")
