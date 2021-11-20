@@ -5,6 +5,8 @@ I am working hard on this workshop currently, so stay tuned.
 
 Current work in progress:
 - Preparing the inital solution for the exercises
+- Writing some background Information
+- Providing Pages in englisch and german Language
 
 ## Hintergrund
 
