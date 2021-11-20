@@ -23,5 +23,5 @@ Genau dann stößt man fast immer auf die Verwendung anämischer Modelle.
 Es mag Gründe für ein anämisches Modell geben, ich kenne jedoch keinen der beim Einsatz von OOP dafür spricht und teile die Meinung von Martin Fowler zu 100%, dass es sich hier um ein Anti-Pattern handelt.
 Zu meinem Glück macht es mir aber auch Spaß, Entwicklern aufzuzeigen, wie sie ihren Code verbessern können und wie sie zu einem guten Domänenmodell finden.
 Was mich zudem fröhlich stimmt sind insbesondere die "Aha"-Effekte, die Personen erleben, wenn man gemeinsam mit ihnen den Code dahingehend umbaut, dass nach und nach ein Domänenmodell entsteht, dass die geschäftlichen Anforderung bestmöglich umsetzt. 
-Und es macht mich glücklich, einen Weg dahin aufzuzeigen.
+Und es macht mich glücklich, einen Weg dahin aufzeigen zu können.
 In diesem Workshop soll es genau darum gehen.
