@@ -1,7 +1,7 @@
 #### DOMAIN DRIVEN DESIGN
-# Refactoring towards a cohesive domain model
-These pages a still under construction.
-I am working hard on this workshop currently, so stay tuned.
+# Refaktorisierung zu einem geschlossenem domänengetriebenen Modell.
+Der Workshop und die dazugehörigen Seiten befinden sich derzeit noch in einer frühen Phase der Entstehung.
+Ich arbeite in den nächsten 2 Wochen an der Umsetzung.
 
 Aktuell arbeite ich an:
 - Initialem Code für die folgenden Übungen
