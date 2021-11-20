@@ -1,5 +1,5 @@
 #### DOMAIN DRIVEN DESIGN
-# Refaktorisierung zu einem geschlossenem domänengetriebenen Modell.
+# Refaktorisierung zu einem geschlossenem domänengetriebenen Modell
 Der Workshop und die dazugehörigen Seiten befinden sich derzeit noch in einer frühen Phase der Entstehung.
 Ich arbeite in den nächsten 2 Wochen an der Umsetzung.
 
