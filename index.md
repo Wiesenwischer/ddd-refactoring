@@ -12,4 +12,4 @@ Current work in progress:
 
 The background Information is currently only available in the german language.
 I will provide them in englisch during the next days.
-Meanwhile you can have a look at the german page.
+Meanwhile you can have a look at the german page [here](https://wiesenwischer.github.io/ddd-refactoring/de:Index.md].
