@@ -13,7 +13,7 @@ Aktuell arbeite ich an:
 In den letzen 20 Jahren habe ich mich immer mehr in der objektorientieren Programmierung spezialisiert. 
 Ich bin ein großer Fan der objektorientieren Programmierung und insbesondere von Domain Driven Design. 
 Leider stoße ich in meiner täglichen Arbeit immer wieder auf Code, der zwar Objektorientierung suggeriert, aber im Prinzip nichts anderes ist als prozedurale Programmierung verpackt in Klassen.
-immer wieder sieht man so genannte anämische Domänenmodelle ([anemic domain  model](https://martinfowler.com/bliki/AnemicDomainModel.html)).
+Immer wieder sieht man so genannte anämische Domänenmodelle ([anemic domain  model](https://martinfowler.com/bliki/AnemicDomainModel.html)).
 Hierbei handelt es sich um Klassen, die im Prinzip nichts anderes sind als Behälter für Eigenschaften. Dazu gibt es dann meist mehrere „Service“-Klassen die Geschäftslogik implementieren und Eigenschaften auf diesen Klassen lesen und setzen. 
 Nichts widerspricht der objektorientieren mehr als dieser "Architekturstil". Denn in der objektorientierten Proframmierung (OOP) geht es darum, Daten und Verhalten in einer Klasse zu kapseln.
 Und genau das ist es wohl, warum ich ein so großer Befürworter von Domain Driven Design geworden bin. 
